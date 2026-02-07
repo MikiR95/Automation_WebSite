@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAFCON Systems</title>      
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+    <header>
+    <div class="lang-switch">
+        <button onclick="setLanguage('pl')">PL</button>
+        <button onclick="setLanguage('en')">EN</button>
+    </div>
+    <h1 data-i18n="hero.title"></h1>
+    <p data-i18n="hero.subtitle"></p>
+    <a href="#contact" data-i18n="hero.contact"></a>
+    </header>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+    <h2 data-i18n="about.title"></h2>
+    <main>
+        <p data-i18n="about.content"></p>
+    </main>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services">
+    <h2 data-i18n="services.title"></h2>
+    <div class="services">
+        <div class="card">
+        <h3 data-i18n="services.plc_programming"></h3>
+        <p data-i18n="services.plc_programming_desc"></p>
+        </div>
+        <div class="card">
+        <h3 data-i18n="services.scada_hmi"></h3>
+        <p data-i18n="services.scada_hmi_desc"></p>
+        </div>
+        <div class="card">
+        <h3 data-i18n="services.integration_modernization"></h3>
+        <p data-i18n="services.integration_modernization_desc"></p>
+        </div>
+        <div class="card">
+        <h3 data-i18n="services.diagnostic"></h3>
+        <p data-i18n="services.diagnostic_desc"></p>
+        </div>
+    </div>
+    </section>
+
+    <!-- ===== WHY US ===== -->
+    <section id="features">
+    <h2 data-i18n="features.title"></h2>
+    <div class="features">
+        <div class="card">
+        <h3 data-i18n="features.experience"></h3>
+        <p data-i18n="features.experience_desc"></p>
+        </div>
+        <div class="card">
+        <h3 data-i18n="features.fast_response"></h3>
+        <p data-i18n="features.fast_response_desc"></p>
+        </div>
+        <div class="card">
+        <h3 data-i18n="features.quality"></h3>
+        <p data-i18n="features.quality_desc"></p>
+        </div>
+    </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+    <h2 data-i18n="projects.title"></h2>
+    <main>
+        <p data-i18n="projects.content"></p>
+    </main>
+    <div class="projects">
+        <div class="card">
+        <h3 data-i18n="projects.automation_line"></h3>
+        <p data-i18n="projects.automation_line_desc"></p>
+        </div>
+        <div class="card">
+        <h3 data-i18n="projects.scada_system"></h3>
+        <p data-i18n="projects.scada_system_desc"></p>
+        </div>
+        <div class="card">
+        <h3 data-i18n="projects.factory_integration"></h3>
+        <p data-i18n="projects.factory_integration_desc"></p>
+        </div>
+    </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+        <section id="contact">
+        <h2 data-i18n="contact.title"></h2>
+
+        <div class="contact-card">
+
+            <!-- LEFT: COMPANY INFO -->
+            <div class="contact-info">
+            <h3 data-i18n="contact.info_title"></h3>
+
+            <p>
+                <strong data-i18n="contact.phone_label"></strong><br>
+                <a href="tel:+48600123456">+48 600 123 456</a>
+            </p>
+
+            <p>
+                <strong data-i18n="contact.email_info_label"></strong><br>
+                <a href="mailto:kontakt@rafcon.com">kontakt@rafcon.com</a>
+            </p>
+
+            <p>
+                <strong data-i18n="contact.hours_label"></strong><br>
+                <span data-i18n="contact.hours_info"></span>
+            </p>
+
+            <p>
+                <strong data-i18n="contact.company_info_label"></strong><br>
+                RAFCON Systems<br>
+                Rafał Mikołajczak<br>
+                NIP: 123-456-78-90
+            </p>
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <form class="contact-form" onsubmit="return sendMail(event)">
+            <div class="form-group">
+                <label for="company" data-i18n="contact.company_label"></label>
+                <input type="text" id="company">
+            </div>
+
+            <div class="form-group">
+                <label for="name" data-i18n="contact.name_label"></label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" data-i18n="contact.email_label"></label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" data-i18n="contact.message_label"></label>
+                <textarea id="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" data-i18n="contact.submit_button"></button>
+            </div>
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <footer>
+    &copy; 2026 RAFCON Systems. <span data-i18n="footer.rights"></span>
+    </footer>  
+    
+    <script src="assets/js/lang.js"></script>
+</body>
+</html>

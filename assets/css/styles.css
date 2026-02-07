@@ -1,0 +1,266 @@
+/* ====== GLOBAL STYLES ====== */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    :root {
+        --primary: #004225; /* British racing green */
+        --primary-dark: #002d18;
+        --light: #f5f5f5;
+        --text: #222;
+        --accent: #8bc34a;
+        --divider: #004225;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--light);
+        color: var(--text);
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background: var(--primary);
+        font-family: 'Orbitron', sans-serif;
+        color:  #C0C0C0;
+        text-align: center;
+        padding: 75px 20px;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 2.8em;
+        margin: 0;
+    }
+
+    header p {
+        margin: 10px 0 20px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    header a {
+      display: inline-block;        /* kluczowe */
+      margin-top: 20px; 
+      text-decoration: none;
+      font-family: 'Arial', sans-serif;
+      background: var(--accent);
+      color: black;
+      padding: 10px 25px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    header a:hover {
+      background: #aed581;
+    }
+
+    /* ===== LANGUAGE SWITCH ===== */
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .lang-switch button {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 0.85em;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s, border 0.3s;
+    }
+
+    .lang-switch button:hover {
+      background: rgba(255, 255, 255, 0.25);
+      border-color: #aed581;
+    }
+
+    nav button {
+      background: #006633;
+      border: none;
+      color: white;
+      margin-left: 5px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    nav button:hover {
+      background: #00994d;
+    }
+
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
+
+    main p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      line-height: 1.6em;
+    }
+
+    .services, .features, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) translateX(5px);
+    }
+
+    .card h3 {
+      text-align: center;
+      color: var(--primary);
+    }
+
+    .card p {
+      text-align: center;
+      color: var(--text);
+    }
+
+    /* ===== CONTACT CARD ===== */
+    .contact-card {
+      background: white;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    /* LEFT */
+    .contact-info {
+      padding: 40px;
+      font-size: 0.95em;
+    }
+
+    .contact-info h3 {
+      margin-top: 0;
+      margin-bottom: 25px;
+      color: var(--primary);
+    }
+
+    .contact-info p {
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .contact-info a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* RIGHT */
+    .contact-form {
+      position: relative;
+      padding: 40px;
+    }
+
+    /* pionowa linia */
+    .contact-form::before {
+      content: "";
+      position: absolute;
+      top: 10px;       /* ~1 cm od góry */
+      bottom: 10px;    /* ~1 cm od dołu */
+      left: 0;
+      width: 2px;
+      background: #d0d0d0;
+    }
+
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 0.9em;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px 12px;
+      font-size: 1em;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    /* BUTTON */
+    .form-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+
+    .contact-form button {
+      background: var(--accent);
+      color: #000;
+      border: none;
+      padding: 10px 22px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #aed581;
+    }
+    
+    footer {
+      background: var(--primary-dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        border-left: none;
+        border-top: 2px solid var(--divider);
+      }
+    }
