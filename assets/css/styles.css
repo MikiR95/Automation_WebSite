@@ -2,12 +2,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
     :root {
-        --primary: #004225; /* British racing green */
+        --primary: #975500; /* dark orange */
         --primary-dark: #002d18;
         --light: #f5f5f5;
         --text: #222;
-        --accent: #8bc34a;
-        --divider: #004225;
+        --accent: #FF8000; /* bright orange */
+        --divider: #975500;
     }
 
     body {
@@ -23,24 +23,24 @@
         font-family: 'Orbitron', sans-serif;
         color:  #C0C0C0;
         text-align: center;
-        padding: 75px 20px;
+        padding: 20px 20px;
         position: relative;
     }
 
     header h1 {
-        font-size: 2.8em;
-        margin: 0;
+        font-size: 2.2em;
+        margin: 5px 0;
     }
 
     header p {
-        margin: 10px 0 20px;
+        margin:5px 0 10px;
         font-size: 1.2em;
         text-align: center;
     }
 
     header a {
       display: inline-block;        /* kluczowe */
-      margin-top: 20px; 
+      margin-top: 10px; 
       text-decoration: none;
       font-family: 'Arial', sans-serif;
       background: var(--accent);
@@ -52,7 +52,15 @@
     }
 
     header a:hover {
-      background: #aed581;
+      background: #FF9933;
+    }
+
+    /* ===== MAIN LOGO ===== */
+    .main-logo {
+      max-width: 350px;
+      height: auto;
+      margin: 5px auto;
+      display: block;
     }
 
     /* ===== LANGUAGE SWITCH ===== */
@@ -77,11 +85,11 @@
 
     .lang-switch button:hover {
       background: rgba(255, 255, 255, 0.25);
-      border-color: #aed581;
+      border-color: var(--accent);
     }
 
     nav button {
-      background: #006633;
+      background: var(--accent);
       border: none;
       color: white;
       margin-left: 5px;
@@ -92,7 +100,7 @@
     }
 
     nav button:hover {
-      background: #00994d;
+      background: var(--accent);
     }
 
     section {
@@ -242,11 +250,11 @@
     }
 
     .contact-form button:hover {
-      background: #aed581;
+      background: #FF9933;
     }
     
     footer {
-      background: var(--primary-dark);
+      background: var(--primary);
       color: white;
       text-align: center;
       padding: 20px;

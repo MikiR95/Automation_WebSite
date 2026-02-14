@@ -1,7 +1,7 @@
 const translations = {
   pl: {
     hero: {
-        title: "RAFCON Systems",
+        title: "Coreli Automation",
         subtitle: "Nowoczesna automatyzacja i integracja systemów przemysłowych",
         contact: "Skontaktuj się"
     },
@@ -60,7 +60,7 @@ const translations = {
 },
     en: {
         hero: {
-            title: "RAFCON Systems",
+            title: "Coreli Automation",
             subtitle: "Modern automation and industrial system integration",
             contact: "Contact Us"
         },
